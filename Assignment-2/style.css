@@ -129,61 +129,91 @@ table {
 }
 /* custom */
 body {
-  line-height: 1.5;
-  color: #333;
-  font-size: 16px;
-  background-color: #efefef;
+  background-color: #e0e0e0;
 }
-
-/* container */
+header,
+footer {
+  height: 100px;
+  background-color: #386665;
+}
 .container {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
-  padding: 0 32px;
-  background-color: white;
+  padding: 0 30px;
 }
-
-/* header */
-h1 {
-  font-size: 44px;
-  font-weight: 600;
-  text-align: center;
-}
-
-/* flex */
+/* flex  */
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.col1 {
-  flex: 0 1 15%;
-  margin-top: 100px;
+.flex-wrap {
+  flex-wrap: wrap;
 }
-.col2 {
-  flex: 0 1 60%;
+/* header  */
+.header {
+  position: fixed;
+  width: 100%;
 }
-.col3 {
-  flex: 0 1 15%;
-  margin-top: 100px;
+.header-img img {
+  width: 50px;
+  height: 50px;
+  padding: 30px;
 }
-
-/* ARTICLE */
+.header-nav {
+  padding: 20px;
+  margin: 20px;
+}
+.header-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+  padding: 0 20px;
+}
+/* article  */
+.body-article {
+  background-color: #94b998;
+  padding-top: 100px;
+}
 h2 {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 30px;
+  padding: 20px;
+}
+.body-header {
+  width: 60%;
+}
+.body-header p {
+  font-size: 15px;
+  line-height: 2;
+  padding: 20px;
+}
+.body-img {
+  width: 30%;
+  padding: 30px;
+}
+.img-row {
+  margin: 50px 0;
 }
 img {
-  width: 600px;
-  height: 500px;
-  object-fit: cover;
+  width: 300px;
+  height: 200px;
 }
-p {
-  margin: 10px 0;
-  font-weight: 500;
+.gallery {
+  background-color: #96b4c2;
 }
-.quote {
-  padding: 0 30px;
+/* footer  */
+.footer-nav {
+  padding: 20px;
+  margin: 20px;
 }
-    
+.footer-nav a {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.footer-span {
+  font-size: 20px;
+  padding: 20px;
+}
